@@ -15,7 +15,83 @@
             padding: 20px 200px;
             background-color: antiquewhite;
         }
+        
+        .food {
+            padding: 20px 200px;
+        }
+
+        .food-container {
+            display: grid;
+            grid-template-areas: 'one one two three'
+                                'one one four three';
+            grid-gap: 10px;
+        }
+
+        .food-items {
+            overflow: hidden;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        .food-items img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s ease-in-out;
+        }
+
+        .food-items:hover img {
+            transform: scale(1.1);
+        }
+
+        .food-1 { grid-area: one; }
+        .food-2 { grid-area: two; }
+        .food-3 { grid-area: three; filter: grayscale(0.5); }
+        .food-4 { grid-area: four; }
+
+
+        .food-content {
+            font-size: 3vmin;
+            font-weight: 600;
+        }
+
+        .btns {
+            padding: 10px 20px;
+            text-align: center;
+            width: 100px;
+            border-radius: 50px;
+            background-color: rgb(109, 200, 109);
+        }
+
+        .food-content {
+            padding: 20px 0px;
+        }
+
+        .food-content div {
+            padding: 10px 0px;
+        }
+
+        .food-title {
+            font-size: 4vmin;
+            font-weight: 800;
+        }
+
+        .food-text {
+            font-size: 3vmin;
+            font-weight: 400;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aqua;
+            padding: 5px 15px;
+            border-radius: 50px;
+            /* z-index: 20; */
+        }
     </style>
+
 </head>
 <body>
     <nav>
@@ -44,14 +120,33 @@
     
     <main>
 
+        <section class="food">
+            <div class="food-container">
+                <div class="food-items food-1">
+                    <img src="./images/desi-meals.png" alt="" id="food-1">
+                </div>
+                <div class="food-items food-2">
+                    <img src="./images/desi-meals2.png" alt="" id="food-2">
+                </div>
+                
+                <div class="food-items food-3">
+                    <div class="btn">
+                        More..
+                    </div>
+                    <img src="./images/desi-meals3.png" alt="" id="food-3">
+                </div>
+                <div class="food-items food-4">
+                    <img src="./images/desi-meals4.png" alt="" id="food-4">
+                </div>
+            </div>
 
-        <section class = "food-gallery">
-            <div class = "item1">1</div>
-            <div class = "item2">2</div>
-            <div class = "item3">3</div>
-            <div class = "item4">4</div>
+            <div class="food-content">
+                <div class="food-title">Desi Meal</div>
+                <div class="food-text">North Indian, Biryani, Fast Food, Wraps, Sandwich, Ice Cream, Desserts, Beverages
+                </div>
+                <div class="btns">Order</div>
+            </div>
         </section>
-
 
     </main>
 
