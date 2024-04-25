@@ -1,0 +1,32 @@
+1. landing page
+2. login page
+3. registration page
+
+
+============ User ================
+
+4. user dashboard page  --------- can provide feedback 
+5. user single item displaying page  ........ by ajax maybe 
+6. user checkout page 
+7. user cart page 
+8. user check orders page 
+9. user profile page 
+10. user reservation table page
+
+
+=========== Staff ===================
+
+11. can view incoming orders 
+12. can change status of orders i.e. prepared, completed, pending
+13. can view reserved tables and orders 
+
+
+============ Admin =================
+
+14. admin dashboard page 
+15. admin add/edit menu page 
+16. admin view menu page. 
+17. admin add/edit table page 
+18. admin check customer orders page 
+19. admin can add staff 
+20. admin profile page 
