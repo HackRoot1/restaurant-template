@@ -46,6 +46,10 @@
             font-weight: 600;
         }
 
+        .card > .title {
+            padding: 15px 0;
+        }
+
         .card .item {
             max-height: 150px;
             display: grid;
@@ -148,7 +152,7 @@
         </div>
 
         <div class = "links-items">
-            <span><a href="#">Home</a></span>
+            <span><a href="./dashboard.html">Home</a></span>
             <span><a href="#">Fresh Food</a></span>
             <span><a href="#">Shop</a></span>
             <span><a href="#">About</a></span>
@@ -159,8 +163,16 @@
             <!-- <span><a href="./login.html">Log In</a></span>
             <span><a href="./registration.html">Sign Up</a></span> -->
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            <span><i class="fa-regular fa-user"></i></span>
-            <span><i class="fa-solid fa-bag-shopping"></i></span>
+            <span>
+                <a href="./profile.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </span>
+            <span>
+                <a href="./checkout.html">    
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+            </span>
         </div>
     </nav>
 
@@ -282,49 +294,51 @@
                     Checkout
                 </div>
 
-                <div class = "payment-card">
+                <div>
+                    <form action="./my_orders.html" class = "payment-card">
+                        <hr>
 
-                    <hr>
-
-                    <div class = "choose-card">
-                        <div>Payment Method:</div>
-                        <div>
-                            <input type="radio" name="cred" id="cred">
-                            <label for="cred">Credit Card</label>
+                        <div class = "choose-card">
+                            <div>Payment Method:</div>
+                            <div>
+                                <input type="radio" name="cred" id="cred">
+                                <label for="cred">Credit Card</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="cred" id="paypal">
+                                <label for="paypal">PayPal</label>
+                            </div>
                         </div>
+
+                        <hr>
+
                         <div>
-                            <input type="radio" name="cred" id="paypal">
-                            <label for="paypal">PayPal</label>
+                            <label for="card-name">
+                                Name on card:
+                            </label>
+                            <input type="text" id = "card-name">
                         </div>
-                    </div>
 
-                    <hr>
+                        <div>
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id = "card-number">
+                        </div>
 
-                    <div>
-                        <label for="card-name">
-                            Name on card:
-                        </label>
-                        <input type="text" id = "card-name">
-                    </div>
+                        <div>
+                            <label for="expiry-date">Expiration Date:</label>
+                            <input type="text" id = "expiry-date">
+                        </div>
+                        
+                        <div>
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id = "cvv">
+                        </div>
 
-                    <div>
-                        <label for="card-number">Card Number:</label>
-                        <input type="text" id = "card-number">
-                    </div>
+                        <div>
+                            <button>Check Out</button>
+                        </div>
+                    </form>
 
-                    <div>
-                        <label for="expiry-date">Expiration Date:</label>
-                        <input type="text" id = "expiry-date">
-                    </div>
-                    
-                    <div>
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id = "cvv">
-                    </div>
-
-                    <div>
-                        <button>Check Out</button>
-                    </div>
                 </div>
             </div>
         </section>
