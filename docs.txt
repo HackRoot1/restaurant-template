@@ -23,10 +23,10 @@
 
 ============ Admin =================
 
-14. admin dashboard page 
-15. admin add/edit menu page 
-16. admin view menu page. 
-17. admin add/edit table page 
-18. admin check customer orders page 
-19. admin can add staff 
-20. admin profile page 
+14. admin dashboard page                dashboard.html
+15. admin add/edit menu page            add_food_lists.html 
+16. admin view menu page.               food_lists.html
+17. admin add/edit table page           add_table_reservation.html 
+18. admin check customer orders page    customers_orders.html 
+19. admin can add staff                 add_staff.html 
+20. admin profile page                  admin_profile.html
