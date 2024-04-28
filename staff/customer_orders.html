@@ -1,0 +1,331 @@
+<!-- us_food.html === user single food .html  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .checkout-section {
+            padding: 20px 200px;
+            min-height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: stretch;
+            gap: 5%;
+        }
+
+        .card {
+            width: 100%;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .card > .title{
+            /* height: 40px; */
+            padding: 15px 0px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .card .item {
+            max-height: 150px;
+            display: grid;
+            grid-template-columns: 150px auto auto auto;
+
+        }
+
+        table, thead td, tbody td, tfoot td {
+            border-collapse: collapse;
+            border: 2px solid #8e8e8e;
+        }
+
+        tbody tr td img {
+            width: 150px;
+        }
+
+        table .theading {
+            font-size: 20px;
+        }
+        
+        table .theading td{
+            padding: 5px 15px;
+        }
+
+        tfoot td {
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+        
+        .card :is(.info, .name, .address) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .card .info .title, .card :is(.name, .address){
+            font-size: 20px;
+        }
+        
+        .card .quantity, .card .price, .card .status, .card .buy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+        }
+
+        .card .status > .ordered{
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+        
+        .card .buy > .buy-edit span{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        
+        .card .buy > .buy-return{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        
+        .card .status > .cancelled{
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+
+        .card .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card .btns span {
+            background-color: #8e8e8e;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div>
+            <span class="title">Mazano.</span>
+        </div>
+
+        <div class = "links-items">
+            <span><a href="./dashboard.html">Home</a></span>
+            <span><a href="#">Fresh Food</a></span>
+            <span><a href="#">Shop</a></span>
+            <span><a href="#">About</a></span>
+            <span><a href="#">Blog</a></span>
+        </div>
+
+        <div class = "links-icons">
+            <!-- <span><a href="./login.html">Log In</a></span>
+            <span><a href="./registration.html">Sign Up</a></span> -->
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span>
+                <a href="./profile.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </span>
+            <span>
+                <a href="./checkout.html">    
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+            </span>
+        </div>
+    </nav>
+
+
+    
+    <main>
+
+        <section class = "checkout-section">
+            <div class="card">
+                <div class="title">
+                    Customer Orders
+                </div>
+
+                <table>
+                    <thead>
+                        <tr class = "theading">
+                            <td>Customer Name</td>
+                            <td>Address</td>
+                            <td>Food Item</td>
+                            <td>Quantity</td>
+                            <td>Status</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class = "name">Saurabh Damale</div>
+                            </td>
+                            <td>
+                                <div class = "address">
+                                    Shahapur
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info">
+                                    <div class="title">Cheese Burger</div>
+                                    <div class="description">Extra Spicy No mayo</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="status">
+                                    <div class = "ordered">
+                                        Order Placed
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btns">
+                                    <span>
+                                        Dispatched
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class = "name">
+                                    Saurabh Damale
+                                </div>
+                            </td>
+                            <td>
+                                <div class = "address">
+                                    Shahapur
+                                </div>
+                            </td>
+                            <td>
+                                <div class="info">
+                                    <div class="title">Cheese Burger</div>
+                                    <div class="description">Extra Spicy No mayo</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="status">
+                                    <div class = "cancelled">
+                                        Order cancelled
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btns">
+                                    <span>
+                                        Dispatched
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="title">zomato</div>
+
+        <div class="sections">
+            <div>
+                <div class="title">About Zomato</div>
+                <a href="#">Who We Are</a>
+                <a href="#">Blog</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Report Fraud</a>
+                <a href="#">Press Kit</a>
+                <a href="#">Contact Us</a>
+            </div>
+            
+            <div>
+                <div class="title">zomaverse</div>
+                <a href="#">Zomato</a>
+                <a href="#">Blinkit</a>
+                <a href="#">Feeding India</a>
+                <a href="#">Hyperpure</a>
+                <a href="#">Zomaland</a>
+            </div>
+            
+            <div>
+                <div class="title">for restaurants</div>
+                <a href="#">Partner With Us</a>
+                <a href="#">Apps for you</a>
+            </div>
+            
+            <div>
+                <div class="title">Learn More</div>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+            
+            <div>
+                <div class="title">Social Links</div>
+                <div>
+                    <span>i</span>
+                    <span>i</span>
+                    <span>i</span>
+                    <span>i</span>
+                </div>
+            </div>
+            
+
+        </div>
+        <hr>
+        <div class = "copyright">
+            copyrights @ 2024
+        </div>
+    </footer>
+
+</body>
+</html>

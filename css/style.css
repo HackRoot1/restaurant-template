@@ -7,7 +7,9 @@
 
 body {
     --background-color: #000;
+    --pure-background: #000;
     --color: #fff;
+    --scroll-color: #a3a3a3;
     font-size: 16px;
 
     /* scroll bar on X-axis */
@@ -25,7 +27,7 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color); 
+    background: var(--scroll-color); 
 }
 
 /* Handle on hover */
