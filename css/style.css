@@ -377,13 +377,16 @@ main .blogs-sections > .boxes .box img{
     font-size: 25px
 }
 
-
-.categories > div {
+.categories div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding-bottom: 20px;
+}
+
+.categories div.active {
+    border-bottom: 2px solid #ba42ba;
 }
 
 .categories .icon{

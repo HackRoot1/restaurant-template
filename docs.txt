@@ -30,3 +30,133 @@
 18. admin check customer orders page    customers_orders.html 
 19. admin can add staff                 add_staff.html 
 20. admin profile page                  admin_profile.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================== Database ====================
+
+1. Registration Table  - Users details 
+
+    1. id 
+    2. first name
+    3. last name 
+    4. username 
+    5. contact no 
+    6. email 
+    7. address 
+    8. password
+
+
+2. Food list table 
+
+    1. food name 
+    2. food category 
+    3. food description 
+    4. food ingredients 
+    5. price 
+    6. quantity 
+    7. discount percentage 
+    8. primary image
+    9. set of images 
+
+3. "reservation Table" Table 
+
+    1. table no
+    2. seats
+    
+
+4. Staff Table 
+
+    1. first name 
+    2. last name 
+    3. contact no 
+    4. role 
+    5. shift 
+
+
+5. Users cart Table 
+
+    case 1: Check if food item is already added to cart or not 
+
+    1. id 
+    2. food id 
+    3. user id 
+    
+
+6. Users card details 
+
+    1. user id 
+    2. name on card 
+    3. card no 
+    4. expiry date 
+    5. cvv 
+
+
+7. Orders Table 
+
+    1. user id 
+    2. food id 
+    3. quantity 
+    4. total price 
+    5. status 
+
+
+8. table reserved - table 
+
+    1. user id 
+    2. table id 
+    3. date 
+    4. guests 
+    5. guests first name 
+    6. guests last name 
+    7. guests email name 
+    8. guests phone name 
+    9. guests additional request name 
+    10. status 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================= User Steps =====================
+
+
+1. User register first - 
+    1. full name 
+    2. username 
+    3. password 
+
+2. After registration user goes to the shopping home page 
+
+    1. display all food items using pagination logic i.e. 20 items at a time 
+    2. use filters for categories 
+    3. use filters for sorting by price ascending or descending 
+
+3. After selecting a particular food item by user - 
+    1. display that food itme's set of images 
+    2. user can add that item in cart or can directly by that item 
+
+4. 
